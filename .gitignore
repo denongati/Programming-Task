@@ -1,18 +1,18 @@
-# Object files
-*.o
-*.ko
+def despace(s):
+return
 
-# Libraries
-*.lib
-*.a
+def fix_data(value):
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+return float(''.join(value.split()))
 
-# Executables
-*.exe
-*.out
-*.app
+def fix_data2(value):
+try:
+return float(value)
+except ValueError:
+return float(''.join(value.split()))
+
+import string
+# initialize some global data
+table = string.maketrans("", "") # all 8 bit characters
+keep = "1234567890.-+"
+dontkeep = ''.join([c for c in table if c not in keep])
