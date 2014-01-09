@@ -6,16 +6,16 @@ return
 
 def fix_data(value);
 
-return float(''.join(value.split()))
+return float(''.join(value.split()));
 
 def fix_data2(value);
 try:
-return float(value)
+return float(value);
 except ValueError;
-return float(''.join(value.split()))
+return float(''.join(value.split()));
 
 import string
 # initialize some global data
-table = string.maketrans("", "") # all 8 bit characters
-keep = "1234567890.-+"
+table = string.maketrans("", "") # all 8 bit characters;
+keep = "1234567890.-+";
 dontkeep = ''.join([c for c in table if c not in keep]);
